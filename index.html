@@ -1,23 +1,134 @@
 <!DOCTYPE html>
-<html lanf="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    #categories ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #categories ul li {
+      margin-bottom: 10px;
+    }
+
+    .product {
+      float: left;
+      width: calc(33.33% - 20px);
+      margin-right: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <div id="main">
-        <h1>Online shop</h1>
-        <img src="https://thumb.tildacdn.com/tild3632-3264-4161-b465-633537303662/-/resize/744x/-/format/webp/Dj0SxTKW0AIdFBz.jpg">
-        <p>Це магазин Clour Vape</p>
-        <button id="buy">купити</button>
-    </div>    
+  <header>
+    <h1>Назва вашого магазину</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="categories">
+    <h2>Категорії</h2>
+    <ul>
+      <li><a href="#">Категорія 1</a></li>
+      <li><a href="#">Категорія 2</a></li>
+      <li><a href="#">Категорія 3</a></li>
+    </ul>
+  </section>
 
+  <section id="products">
+    <article class="product">
+      <img src="product1.jpg" alt="Товар 1">
+      <h3>Назва товару 1</h3>
+      <p>Ціна: $20</p>
+      <button>Додати до кошика</button>
+    </article>
+
+    <article class="product">
+      <img src="product2.jpg" alt="Товар 2">
+      <h3>Назва товару 2</h3>
+      <p>Ціна: $30</p>
+      <button>Додати до кошика</button>
+    </article>
+
+    <!-- Додаткові товари -->
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Назва вашого магазину. Усі права захищені.</p>
+  </footer>
 </body>
-
-
 </html>
